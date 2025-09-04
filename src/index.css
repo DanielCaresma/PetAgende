@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PetAgende Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* PetAgende Brand Colors */
+    --background: 35 22% 94%; /* #F5F1ED bege claro */
+    --foreground: 0 0% 20%; /* #333333 texto */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* Coral/Salmão - Cor Primária (#FF7B7B) */
+    --primary: 0 67% 73%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Azul Turquesa - Cor Secundária (#7BC4C4) */
+    --secondary: 180 47% 63%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 35 22% 90%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Laranja da Patinha (#FF9966) */
+    --accent: 20 100% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 22% 85%;
+    --input: 0 0% 100%;
+    --ring: 0 67% 73%;
+
+    --radius: 0.75rem;
+    
+    /* Gradients para efeitos especiais */
+    --gradient-primary: linear-gradient(135deg, hsl(0 67% 73%), hsl(20 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 47% 63%), hsl(200 50% 70%));
+    
+    /* Shadows com as cores da marca */
+    --shadow-primary: 0 10px 30px -10px hsl(0 67% 73% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 67% 73%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 47% 63%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 20 100% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 0 67% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
